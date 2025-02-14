@@ -11,20 +11,51 @@
         <nav class="bg-green-100 p-3 flex justify-between sticky top-0 z-10">
             <h1 Class="text-2xl">Greenden</h1>
 
-            <ul class="flex gap-5 text-gray-600 hidden md:flex">
-                <li>
-                    <a  href="./index.html" class="hover:underline hover:text-black">Home</a>
-                </li>
-    
-                <li>
-                    <a  href="./product.html" class="hover:underline hover:text-black">Products</a>
-                </li>
-    
-                <li>
-                    <a  href="contact.html" class="hover:underline hover:text-black">Contact</a>
-                </li>
-            </ul>
+
+    <svg id="menuicon"  xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24"
+    stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+</svg>
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a  href="./index.html" class="hover:underline hover:text-black">Home</a>
+            </li>
+
+            <li>
+                <a  href="./product.html" class="hover:underline hover:text-black">Products</a>
+            </li>
+
+            <li>
+                <a  href="contact.html" class="hover:underline hover:text-black">Contact</a>
+            </li>
+        </ul>
+
+        
         </nav>
+
+          <!--side navbar-->
+    <section  id="sidenav" class="bg-green-100 fixed transition-all duration-1000 z-20 top-0 right-0" style="width: 50%;height: 100vh; right: -50%;">
+        <div  class="text-right p-5">
+            <p id="closenav"class="inline cursor-pointer">x</p>
+        </div>
+
+          <ul class="flex flex-col gap-10 items-center text-gray-600  md:flex">
+            <li>
+                <a  href="./index.html" class="hover:underline hover:text-black">Home</a>
+            </li>
+
+            <li>
+                <a  href="./product.html" class="hover:underline hover:text-black">Products</a>
+            </li>
+
+            <li>
+                <a  href="contact.html" class="hover:underline hover:text-black">Contact</a>
+            </li>
+        </ul>
+
+    </section>
+
 
         <section class="bg-white dark:bg-gray-900">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -53,6 +84,10 @@
         <p>The standard chunk of lorem ipsum used since the 1500s is reprodused below for those interest</p>
         <p>&copy; 2021 Greendaycom</p>
      </section>
+
+     <script src="contact.js">
+
+     </script>
    
 </body>
 </html>
